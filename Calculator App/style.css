@@ -1,0 +1,16 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    padding: 20px;
+}
+
+button {
+    font-size: 1.5rem;
+}
+
+#display {
+    font-size: 2rem;
+    text-align: right;
+}

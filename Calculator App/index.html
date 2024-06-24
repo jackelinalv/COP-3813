@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="text-center">Calculator</h1>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" id="display" class="form-control" readonly>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <button type="button" class="btn btn-secondary col m-1" onclick="appendNumber('7')">7</button>
+                                    <button type="button" class="btn btn-secondary col m-1" onclick="appendNumber('8')">8</button>
+                                    <button type="button" class="btn btn-secondary col m-1" onclick="appendNumber('9')">9</button>
+                                    <button type="button" class="btn btn-warning col m-1" onclick="appendOperator('+')">+</button>
+                                </div>
+                                <div class="row">
+                                    <button type="button" class="btn btn-secondary col m-1" onclick="appendNumber('4')">4</button>
+                                    <button type="button" class="btn btn-secondary col m-1" onclick="appendNumber('5')">5</button>
+                                    <button type="button" class="btn btn-secondary col m-1" onclick="appendNumber('6')">6</button>
+                                    <button type="button" class="btn btn-warning col m-1" onclick="appendOperator('-')">-</button>
+                                </div>
+                                <div class="row">
+                                    <button type="button" class="btn btn-secondary col m-1" onclick="appendNumber('1')">1</button>
+                                    <button type="button" class="btn btn-secondary col m-1" onclick="appendNumber('2')">2</button>
+                                    <button type="button" class="btn btn-secondary col m-1" onclick="appendNumber('3')">3</button>
+                                    <button type="button" class="btn btn-warning col m-1" onclick="appendOperator('*')">*</button>
+                                </div>
+                                <div class="row">
+                                    <button type="button" class="btn btn-secondary col m-1" onclick="appendNumber('0')">0</button>
+                                    <button type="button" class="btn btn-secondary col m-1" onclick="clearDisplay()">C</button>
+                                    <button type="button" class="btn btn-secondary col m-1" onclick="calculate()">=</button>
+                                    <button type="button" class="btn btn-warning col m-1" onclick="appendOperator('/')">/</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
